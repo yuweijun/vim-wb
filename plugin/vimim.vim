@@ -24,10 +24,8 @@ let s:VimIM += [" ====  initialization   ==== {{{"]
 " =================================================
 
 function! s:vimim_bare_bones_vimrc()
-    set cpoptions=Bce$ go=cirMehf shm=aoOstTAI noloadplugins
-    set gcr=a:blinkon0 shellslash noswapfile hlsearch viminfo=
-    set fencs=ucs-bom,utf8,chinese,gb18030 gfn=Courier_New:h12:w7
-    set enc=utf8 gfw=YaHei_Consolas_Hybrid,NSimSun-18030
+    set fileencodings=utf8,chinese,gb18030
+    set cpoptions=Bce$ guioptions=cirMehf shm=aoOstTAI noloadplugins
 endfunction
 
 if exists("g:Vimim_profile") || &iminsert == 1 || v:version < 700
